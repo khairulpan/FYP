@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    tools:context="com.ashrafazmi.admin.Feedback">
+
+    <TextView
+        android:id="@+id/use"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/full"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/listViewTracks"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnadd"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:divider="@color/colorAccent"
+        android:dividerHeight="1dp">
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/btnadd"
+        android:ems="10"
+        android:hint="Feedback/News"
+        android:inputType="text|textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="#008000"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/btnadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/message"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="558dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/imageButtonhelpoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/infoof" />
+
+        <ImageButton
+            android:id="@+id/imageButtoncarton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/carton" />
+
+        <ImageButton
+            android:id="@+id/imageButtonprooff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/promooff" />
+    </LinearLayout>
+
+
+</RelativeLayout>

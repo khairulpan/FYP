@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary">
+
+
+    <ListView
+        android:id="@+id/listViewTracks"
+        android:layout_width="380dp"
+        android:layout_height="550dp"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:divider="@android:color/holo_blue_light"
+        android:dividerHeight="1dp">
+
+    </ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/imageButtonLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/buser"
+        android:layout_marginEnd="38dp"
+        android:clickable="true"
+        app:backgroundTint="@android:color/holo_red_light"
+        app:fabSize="normal"
+        app:rippleColor="@android:color/white"
+        app:srcCompat="@drawable/signout" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/bdaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bfeedback"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        app:backgroundTint="@android:color/white"
+        app:fabSize="normal"
+        app:rippleColor="@color/colorAccent"
+        app:srcCompat="@drawable/day" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/bfeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bdaylist"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="165dp"
+        android:clickable="true"
+        app:backgroundTint="@android:color/white"
+        app:fabSize="normal"
+        app:rippleColor="@android:color/holo_green_dark"
+        app:srcCompat="@drawable/infoon" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/buser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bdaylist"
+        android:layout_marginStart="118dp"
+        android:layout_toEndOf="@+id/bdaylist"
+        android:clickable="true"
+        app:backgroundTint="@android:color/white"
+        app:fabSize="normal"
+        app:rippleColor="@android:color/holo_blue_light"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="SmartCart Daily Record"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/listViewTracks"
+        android:layout_marginEnd="19dp"
+        android:layout_marginTop="115dp"
+        android:text="Current Income for today:-"
+        android:textAlignment="textStart"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/resultinc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="28dp"
+        android:text="MYR"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/countuse"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="0sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/three"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="3"
+        android:textSize="0sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>
